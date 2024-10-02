@@ -1,0 +1,15 @@
+.card{
+    width: 20rem;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
