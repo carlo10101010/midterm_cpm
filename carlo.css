@@ -1,3 +1,15 @@
+
+body{
+    overflow-x: hidden;
+}
+.div1{
+    background-color: gray;
+}
+
+.h{
+    background-color: white;
+}
+
 .card{
     width: 20rem;
 }
@@ -9,7 +21,26 @@
 }
 
 .section1{
+
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.nav-link:hover{
+    background-color: white;
+}
+
+.row{
+    background-color: gray;
+}
+
+#Reviews{
+    text-align: center;
+    width: 100%;
+}
+
+.fs-5{
+    width: 500px;
+    margin-left: 20px;
 }
