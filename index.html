@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="carlo.css">
-    <title>Midterm_Carlo</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Midterm_Carlo P. Mendoza</title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-secondary">
             <div class="container-fluid">
-              <a class="navbar-brand fw-bold" href="#">Bag Shop</a>
+              <a class="navbar-brand fw-bold" href="#">Carlo's Bag Shop</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse d-flex justify-content-end pe-5" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="#products">Product</a>
+                  <a class="nav-link" href="#Featured">Featured</a>
+                  <a class="nav-link" href="#Products">Product</a>
                   <a class="nav-link" href="#Reviews">Reviews</a>
-                  <a class="nav-link" href="#About Us">About Us</a>
+                  <a class="nav-link" href="#Contact Us">Contact Us</a>
                 </div>
               </div>
             </div>
@@ -38,7 +39,7 @@
         </header>
         </main>
 
-        <h2 class="text-center fw-bold" id="products">Featured</h2>
+        <h2 class="text-center fw-bold" id="Featured">Featured</h2>
         <section class="section1" id="Bags">
             <div class="div1 row gap-2 justify-content-center">
                 <div class="cols col-3 mb-3">
@@ -112,14 +113,13 @@
       
       <section>
                               
-        <h3 class="mb-3 bg-light fw-bold" id="Reviews">Reviews</h3>
-        <div class="row text-center ">
+        <h3 class="mb-3 bg-light fw-bold text-center" id="Reviews">Reviews</h3>
+        <div class="row text-center">
           <div class="col-md-4 mb-5 mb-md-0">
             <div class="d-flex justify-content-center mb-4">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
-                class="rounded-circle shadow-1-strong" width="150" height="150" />
+              <img src="assets/hazel.webp"class="rounded-circle shadow-1-strong" width="150" height="150" />
             </div>
-            <h5 class="mb-3">Maria</h5>
+            <h5 class="mb-3">Hazel</h5>
             <h6 class="text-primary mb-3">⭐⭐⭐⭐⭐</h6>
             <p class="px-xl-3">
               <i class="fas fa-quote-left pe-2"></i>This laptop backpack exceeded my expectations! The water-resistant material is a lifesaver during rainy days. Plus, the USB charging port is a fantastic feature that makes it easy to charge my devices on the go.
@@ -144,13 +144,12 @@
           </div>
           <div class="col-md-4 mb-5 mb-md-0">
             <div class="d-flex justify-content-center mb-4">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
-                class="rounded-circle shadow-1-strong" width="150" height="150" />
+              <img src="assets/ara.jpg"class="rounded-circle shadow-1-strong" width="150" height="150" />
             </div>
             <h5 class="mb-3">Ara</h5>
             <h6 class="text-primary mb-3">⭐⭐⭐⭐</h6>
             <p class="px-xl-3">
-              <i class="fas fa-quote-left pe-2"></i>Such a cute mini backpack! I get compliments every time I wear it. It holds my phone, wallet, and makeup essentials. I wish it had a little more space, but I can’t resist how stylish it looks!
+              <i class="fas fa-quote-left pe-2"></i>Such a cute mini backpack! I get compliments every single time I wear it. It holds my phone, wallet, and makeup essentials perfectly. I wish it had a little more space, but I can’t resist how stylish it looks overall!
             </p>
             <ul class="list-unstyled d-flex justify-content-center mb-0">
               <li>
@@ -172,8 +171,7 @@
           </div>
           <div class="col-md-4 mb-0">
             <div class="d-flex justify-content-center mb-4">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
-                class="rounded-circle shadow-1-strong" width="150" height="150" />
+              <img src="assets/john meds.jpg"class="rounded-circle shadow-1-strong" width="150" height="150" />
             </div>
             <h5 class="mb-3">John Meds</h5>
           
@@ -203,7 +201,8 @@
 </section>
 
 
-<h2 class="h text-center fw-bold" id="products">Products</h2>
+
+<h2 class="h text-center fw-bold" id="Products">Products</h2>
 <section class="section1" id="Bags">
     <div class="div1 row gap-2">
         <div class="cols col-3">
@@ -214,7 +213,8 @@
                     <p class="card-text fw-bold">Price</p>
                     <p class="card-discount"><del>₱1,900.00</del></p>
                     <p class="card-price"> ₱1,099.00</p>
-                    <a href="#Forms" class="btn btn-primary d-md-flex justify-content-md-center">Buy Now</a>
+                    
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyNowModal">Buy Now</button>
                 </div>
             </div>
         </div>
@@ -227,7 +227,8 @@
                     <p class="card-text fw-bold">Price</p>
                     <p class="card-discount"><del>₱2,578.00</del></p>
                     <p class="card-price"> ₱1,390.00</p>
-                    <a href="#Forms" class="btn btn-primary d-md-flex justify-content-md-center">Buy Now</a>
+         
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyNowModal">Buy Now</button>
                 </div>
             </div>
         </div>
@@ -240,7 +241,8 @@
                     <p class="card-text fw-bold">Price</p>
                     <p class="card-discount"><del>₱3,312.00</del></p>
                     <p class="card-price"> ₱2,890.00</p>
-                    <a href="#Forms" class="btn btn-primary d-md-flex justify-content-md-center">Buy Now</a>
+                   
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyNowModal">Buy Now</button>
                 </div>
             </div>
         </div>
@@ -253,7 +255,8 @@
                     <p class="card-text fw-bold">Price</p>
                     <p class="card-discount"><del>₱3,590.00</del></p>
                     <p class="card-price"> ₱2,999.00</p>
-                    <a href="#Forms" class="btn btn-primary d-md-flex justify-content-md-center">Buy Now</a>
+                  
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyNowModal">Buy Now</button>
                 </div>
             </div>
         </div>
@@ -266,7 +269,8 @@
                     <p class="card-text fw-bold">Price</p>
                     <p class="card-discount"><del>₱1,190.00</del></p>
                     <p class="card-price"> ₱999.00</p>
-                    <a href="#Forms" class="btn btn-primary d-md-flex justify-content-md-center">Buy Now</a>
+       
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyNowModal">Buy Now</button>
                 </div>
             </div>
         </div>
@@ -279,7 +283,8 @@
                     <p class="card-text fw-bold">Price</p>
                     <p class="card-discount"><del>₱1,550.00</del></p>
                     <p class="card-price"> ₱1,090.00</p>
-                    <a href="#Forms" class="btn btn-primary d-md-flex justify-content-md-center">Buy Now</a>
+                    
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyNowModal">Buy Now</button>
                 </div>
             </div>
         </div>
@@ -292,7 +297,8 @@
                     <p class="card-text fw-bold">Price</p>
                     <p class="card-discount"><del>₱2,660.00</del></p>
                     <p class="card-price"> ₱2,090.00</p>
-                    <a href="#Forms" class="btn btn-primary d-md-flex justify-content-md-center">Buy Now</a>
+                   
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyNowModal">Buy Now</button>
                 </div>
             </div>
         </div>
@@ -305,7 +311,8 @@
                     <p class="card-text fw-bold">Price</p>
                     <p class="card-discount"><del>₱1,000.00</del></p>
                     <p class="card-price"> ₱550.00</p>
-                    <a href="#Forms" class="btn btn-primary d-md-flex justify-content-md-center">Buy Now</a>
+         
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyNowModal">Buy Now</button>
                 </div>
             </div>
         </div>
@@ -315,61 +322,104 @@
                 <img src="assets/Laptop Backpacks.webp" class="card-img-top" alt="Laptop Backpacks">
                 <div class="card-body">
                     <h5 class="card-title text-center">Laptop Backpacks</h5>
-                    <p class="card-text fw-bold">Price</p>
+                    <p class="card-text fw-bold ">Price</p>
                     <p class="card-discount"><del>₱2,590.00</del></p>
                     <p class="card-price"> ₱2,076.00</p>
-                    <a href="#Forms" class="btn btn-primary d-md-flex justify-content-md-center">Buy Now</a>
+                    
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyNowModal">Buy Now</button>
                 </div>
             </div>
         </div> 
     </div>
 </section>
 
+<div class="modal fade" id="buyNowModal" tabindex="-1" aria-labelledby="buyNowModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="buyNowModalLabel">Buy Now:</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+          <form class="row g-3">
+            <div class="col-md-4">
+              <label for="validationDefault01" class="form-label">First name</label>
+              <input type="text" class="form-control" id="validationDefault01"  required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationDefault02" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="validationDefault02"  required>
+            </div>
+            <div class="col-md-6">
+              <label for="validationDefault03" class="form-label">Email</label>
+              <input type="text" class="form-control" id="validationDefault03" required>
+            </div>
+            <div class="col-md-6">
+              <label for="validationDefault03" class="form-label">Shipping Address</label>
+              <input type="text" class="form-control" id="validationDefault03" required>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">Agree to terms and conditions</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" data-bs-dismiss="modal" >Cancel </button>
+              <button class="btn btn-primary" type="submit">Order Now</button>
+            </div>
+          </form>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       
 
-        <section>
-          <div class="container">
-            <h1 class="text-center text-dark mb-4 ">Contact Us</h1>
-            <div class="row justify-content-center">
-                <div class="col-md-12 col-lg-10 p-4 bg-dark rounded">
-                    <div class="row">
-                        <div class="col-md-8 col-lg-6">
-                            <h3 class="text-dark">Send us a message</h3>
-                            <p class="text-light">You may hear from us at the contact number you registered with your order. Thank you for your understanding as we respond.</p>
-                            <form>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Enter your name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Enter your email">
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" rows="3" placeholder="Enter your Message"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary btn-block ">Send Now</button>
-                            </form>
+<section>
+  <div class="container">
+    <h1 class="text-center text-dark mb-4" id="Contact Us">Contact Us</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-10 p-4 bg-dark rounded">
+            <div class="row">
+                <div class="col-md-8 col-lg-6">
+                    <h3 class="text-dark">Send us a message</h3>
+                    <p class="text-light">You may hear from us at the contact number you registered with your order. Thank you for your understanding as we respond.</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter your name">
                         </div>
-        
-                        
-                        <div class="col-md-6 col-lg-6 mt-4 mt-md-0 text-light">
-                            <h5 class="text-dark">Name</h5>
-                            <p>Carlo P. Mendoza</p>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3" placeholder="Enter your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block ">Send Now</button>
+                    </form>
+                </div>
 
-                            <h5 class="text-dark">Address</h5>
-                            <p>Bolbok Tuy, Batangas</p>
-        
-                            <h5 class="text-dark">Phone</h5>
-                            <p><a href="tel" class="text-light">09913570856</a></p>
-        
-                            <h5 class="text-dark">Email</h5>
-                            <p><a href="Email" class="text-light">mendozacarlo185@gmail.com</a></p>
-                        </div>
-                    </div>
+                
+                <div class="col-md-6 col-lg-6 mt-4 mt-md-0 text-light">
+                    <h5 class="text-dark">Name</h5>
+                    <p>Carlo's Bag Packs</p>
+
+                    <h5 class="text-dark">Address</h5>
+                    <p>Tuy, Batangas</p>
+
+                    <h5 class="text-dark">Phone</h5>
+                    <p><a href="tel" class="text-light">09913570856</a></p>
+
+                    <h5 class="text-dark">Email</h5>
+                    <p><a href="Email" class="text-light">mendozacarlo185@gmail.com</a></p>
                 </div>
             </div>
-          </div>
-        </section>
+        </div>
+    </div>
+  </div>
+</section>
 
 <footer class="bg-dark text-light p-5 text-center">
     <h2 class="display-6 fw-light mb-4">Bag Pack</h2>
@@ -378,16 +428,23 @@
             <a class="nav-link text-blue fw-light" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-blue fw-light" aria-current="page" href="https://www.facebook.com/carlo.pagcaliwangan.104?mibextid=JRoKG">Contact</a>
+            <a class="nav-link text-blue fw-light" aria-current="page" href="https://www.facebook.com/carlo.pagcaliwangan.104?mibextid=JRoKG">Facebook</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-blue fw-light" aria-current="page" href="#Reviews">Reviews</a>
+            <a class="nav-link text-blue fw-light" aria-current="page" href="#https://www.instagram.com/carlo_pmndzaa?igsh=MWdlNGxnZWJwYTM4bw==">Instagram</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link text-blue fw-light" aria-current="page" href="https://www.tiktok.com/@carlo_pmndzaa?_t=8pbN6Ziq8we&_r=1">Tiktok</a>
     </ul>
+
+     <div class="link-container1"></div>
+        <a class="nav-link1 text-light fw-light pt-3 " href="https://eikenshop.com/pages/privacy-policy">Privacy Policy</a>
+        <a class="nav-link1 text-light fw-light pt-3" href="https://eikenshop.com/pages/general-terms-and-conditions-of-sale">Terms and Conditions</a>
+      </div>
 
     <hr>
     <p>
-        <small class="text-secondary f2-light">Copyright © 2024 All Rights Reserved | Powered by Bootstrap 5</small>
+        <small class="text-secondary f2-light">Copyright © 2024 All Rights Reserved</small>
     </p>
 </footer>
 
