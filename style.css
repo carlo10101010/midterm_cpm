@@ -5,17 +5,31 @@
     color: aliceblue;
 }
 
-.navbar-dark .navbar-toggler {
-    border-color: transparent; /* Make the border transparent */
+.navbar-toggler {
+    border: none;
+    padding-right: 43px;
 }
-
-.navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M3 7h24M3 15h24M3 23h24'/%3E%3C/svg%3E"); /* White lines */
-}
-
-
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 30 30'%3E%3Cpath stroke='none' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: none;
+}
+.navbar-toggler:focus {
+    outline: none;
+}
+.custom-toggler {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: transparent;
+}
+.custom-toggler span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    margin: 2px 0;
 }
 
 
@@ -43,7 +57,9 @@ body{
 }
 
 
-
+#Featured{
+    padding-top: 70px;
+}
 .Featured{
     background-color: white;
 
@@ -53,6 +69,7 @@ body{
     text-align: center;
     width: 100%;
     color: aliceblue;
+    padding-top: 70px;
     
 }
 
@@ -64,8 +81,8 @@ h5{
 }
 
 .card-custom {
-    max-width: 500px; /* Adjust to your preference */
-    margin: auto; /* Center the cards */
+    max-width: 500px;
+    margin: auto; 
 }
 
 
@@ -75,6 +92,10 @@ h5{
     margin-left: 20px;
 }
 
+#Products{
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
 
 .card:hover {
     transform: scale(1.1);
@@ -206,3 +227,11 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+#Contact{
+    padding-top: 70px;
+}
+
+
+
+

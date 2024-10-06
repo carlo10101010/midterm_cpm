@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Midterm_Carlo P. Mendoza</title>
 </head>
 <body>
-    <header>
-        <<nav class="navbar navbar-expand-lg bg-dark fixed-top"> <!-- Added fixed-top class -->
-          <div class="container-fluid">
-              <a class="navbar-brand fw-bold text-white" href="#">Carlo's Bag Shop</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                  <div class="navbar-nav ms-auto"> <!-- Added ms-auto for right alignment -->
-                      <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-                      <a class="nav-link text-white" href="#Featured">Featured</a>
-                      <a class="nav-link text-white" href="#Products">Product</a>
-                      <a class="nav-link text-white" href="#Reviews">Reviews</a>
-                      <a class="nav-link text-white" href="#Contact Us">Contact Us</a>
-                  </div>
-              </div>
-          </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold text-white ps-4" href="#">Carlo's Bag Shop</a>
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto pe-4">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                <a class="nav-link text-white" href="#Featured">Featured</a>
+                <a class="nav-link text-white" href="#Products">Product</a>
+                <a class="nav-link text-white" href="#Reviews">Reviews</a>
+                <a class="nav-link text-white" href="#Contact">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</nav>
       
         <main>
           <section id="Home">
@@ -40,10 +42,10 @@
         </header>
         </main>
 
-        <h2 class="text-center fw-bold text-white pt-4 pb-4" id="Featured">Featured</h2>
+        <h2 class="text-center fw-bold text-white pb-4" id="Featured">Featured</h2>
         <section class="section1" id="Bags">
             <div class="div1 row gap-2 justify-content-center">
-                <div class="col-12 col-sm-6 col-lg-3 mb-3"> <!-- Use col-lg-3 for smaller width -->
+                <div class="col-12 col-sm-6 col-lg-3 mb-3">
                     <div class="card card-custom">
                         <img src="assets/Tactical Backpacks.webp" class="card-img-top hover-img" alt="Tactical Backpacks">
                         <div class="card-body">
@@ -53,7 +55,7 @@
                     </div>
                 </div>
         
-                <div class="col-12 col-sm-6 col-lg-3 mb-3"> <!-- Same adjustment -->
+                <div class="col-12 col-sm-6 col-lg-3 mb-3">
                     <div class="card card-custom">
                         <img src="assets/Drawstring Backpacks.webp" class="card-img-top hover-img" alt="Drawstring Backpacks">
                         <div class="card-body">
@@ -63,7 +65,7 @@
                     </div>
                 </div>
         
-                <div class="col-12 col-sm-6 col-lg-3 mb-3"> <!-- Same adjustment -->
+                <div class="col-12 col-sm-6 col-lg-3 mb-3"> 
                     <div class="card card-custom">
                         <img src="assets/Rucksacks.webp" class="card-img-top hover-img" alt="Rucksacks">
                         <div class="card-body">
@@ -79,7 +81,7 @@
         
                     
         <section id="BagPacks">
-          <h2 class="d-flex justify-content-center my-5 fw-bold text-dark">Bag Pack's Gallery</h2>
+          <h2 class="d-flex justify-content-center my-5 fw-bold text-white">Bag Pack's Gallery</h2>
           <div class="row">
               <div class="col-lg-4 col-md-4 mb-4">
                   <img src="assets/Anti-Theft Backpacks.webp" class="w-100 shadow-1-strong rounded hover-image" alt="Anti-Theft Backpacks" />
@@ -203,12 +205,12 @@
 
 
 
-<h2 class="h text-center fw-bold" id="Products">Products</h2>
+<h2 class="h text-center fw-bold text-white " id="Products">Products</h2>
 <section class="section1" id="Bags">
   <div class="div1 row gap-2 justify-content-center">
-    <div class="col-12 col-sm-6 col-lg-3 mb-3"> <!-- Use col-lg-3 for smaller width -->
+    <div class="col-12 col-sm-6 col-lg-3 mb-3">
         <div class="card card-custom">
-                <img src="assets/Rucksacks.webp" class="card-img-top" alt="Rucksacks">
+                <img src="assets/Rucksacks.webp" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title text-center">Rucksacks</h5>
                     <p class="card-text fw-bold">Price</p>
@@ -220,9 +222,9 @@
             </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-3 mb-3"> <!-- Same adjustment -->
+        <div class="col-12 col-sm-6 col-lg-3 mb-3">
           <div class="card card-custom">
-              <img src="assets/Drawstring Backpacks.webp" class="card-img-top hover-img" alt="Drawstring Backpacks">
+              <img src="assets/Drawstring Backpacks.webp" class="card-img-top hover-img">
               <div class="card-body">
                     <h5 class="card-title text-center">Anti-Theft</h5>
                     <p class="card-text fw-bold">Price</p>
@@ -234,9 +236,9 @@
             </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-3 mb-3"> <!-- Same adjustment -->
+        <div class="col-12 col-sm-6 col-lg-3 mb-3">
           <div class="card card-custom">
-              <img src="assets/Drawstring Backpacks.webp" class="card-img-top hover-img" alt="Drawstring Backpacks">
+              <img src="assets/Fashionable Mini Backpacks.webp" class="card-img-top hover-img">
               <div class="card-body">
                     <h5 class="card-title text-center">Fashionable Mini</h5>
                     <p class="card-text fw-bold">Price</p>
@@ -248,9 +250,9 @@
             </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-3 mb-3"> <!-- Same adjustment -->
+        <div class="col-12 col-sm-6 col-lg-3 mb-3">
           <div class="card card-custom">
-              <img src="assets/Drawstring Backpacks.webp" class="card-img-top hover-img" alt="Drawstring Backpacks">
+              <img src="assets//Tactical Backpacks.webp" class="card-img-top hover-img">
               <div class="card-body">
                     <h5 class="card-title text-center">Tactical</h5>
                     <p class="card-text fw-bold">Price</p>
@@ -262,9 +264,9 @@
             </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-3 mb-3"> <!-- Same adjustment -->
+        <div class="col-12 col-sm-6 col-lg-3 mb-3">
           <div class="card card-custom">
-              <img src="assets/Drawstring Backpacks.webp" class="card-img-top hover-img" alt="Drawstring Backpacks">
+              <img src="assets/Tote Backpacks.webp" class="card-img-top hover-img">
               <div class="card-body">
                     <h5 class="card-title text-center">Tote</h5>
                     <p class="card-text fw-bold">Price</p>
@@ -276,9 +278,9 @@
             </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-3 mb-3"> <!-- Same adjustment -->
+        <div class="col-12 col-sm-6 col-lg-3 mb-3">
           <div class="card card-custom">
-              <img src="assets/Drawstring Backpacks.webp" class="card-img-top hover-img" alt="Drawstring Backpacks">
+              <img src="assets/Duffel Backpacks.webp" class="card-img-top hover-img">
               <div class="card-body">
                     <h5 class="card-title text-center">Duffel</h5>
                     <p class="card-text fw-bold">Price</p>
@@ -290,9 +292,9 @@
             </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-3 mb-3"> <!-- Same adjustment -->
+        <div class="col-12 col-sm-6 col-lg-3 mb-3">
           <div class="card card-custom">
-              <img src="assets/Drawstring Backpacks.webp" class="card-img-top hover-img" alt="Drawstring Backpacks">
+              <img src="assets/Hiking Trekking Backpacks.webp" class="card-img-top hover-img">
               <div class="card-body">
                     <h5 class="card-title text-center">Hiking/Trekking</h5>
                     <p class="card-text fw-bold">Price</p>
@@ -304,9 +306,9 @@
             </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-3 mb-3"> <!-- Same adjustment -->
+        <div class="col-12 col-sm-6 col-lg-3 mb-3">
           <div class="card card-custom">
-              <img src="assets/Drawstring Backpacks.webp" class="card-img-top hover-img" alt="Drawstring Backpacks">
+              <img src="assets/Drawstring Backpacks.webp" class="card-img-top hover-img">
               <div class="card-body">
                     <h5 class="card-title text-center">Drawstring</h5>
                     <p class="card-text fw-bold">Price</p>
@@ -318,9 +320,9 @@
             </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-3 mb-3"> <!-- Same adjustment -->
+        <div class="col-12 col-sm-6 col-lg-3 mb-3">
           <div class="card card-custom">
-              <img src="assets/Drawstring Backpacks.webp" class="card-img-top hover-img" alt="Drawstring Backpacks">
+              <img src="assets/Laptop Backpacks.webp" class="card-img-top hover-img">
               <div class="card-body">
                     <h5 class="card-title text-center">Laptop Backpacks</h5>
                     <p class="card-text fw-bold ">Price</p>
@@ -381,7 +383,7 @@
 
 <section>
   <div class="container">
-    <h1 class="text-center text-dark mb-4" id="Contact Us">Contact Us</h1>
+    <h1 class="text-center text-dark mb-4 text-white" id="Contact">Contact Us</h1>
     <div class="row justify-content-center">
         <div class="col-md-12 col-lg-10 p-4 bg-dark rounded">
             <div class="row">
@@ -404,16 +406,16 @@
 
                 
                 <div class="col-md-6 col-lg-6 mt-4 mt-md-0 text-light">
-                    <h5 class="text-dark">Name</h5>
+                    <h5 class="text-white">Name</h5>
                     <p>Carlo's Bag Packs</p>
 
-                    <h5 class="text-dark">Address</h5>
+                    <h5 class="text-white">Address</h5>
                     <p>Tuy, Batangas</p>
 
-                    <h5 class="text-dark">Phone</h5>
+                    <h5 class="text-white">Phone</h5>
                     <p><a href="tel" class="text-light">09913570856</a></p>
 
-                    <h5 class="text-dark">Email</h5>
+                    <h5 class="text-white">Email</h5>
                     <p><a href="Email" class="text-light">mendozacarlo185@gmail.com</a></p>
                 </div>
             </div>
@@ -423,30 +425,30 @@
 </section>
 
 <footer class="bg-dark text-light p-5 text-center">
-    <h2 class="display-6 fw-light mb-4">Bag Pack</h2>
-    <ul class="nav justify-content-center">
-        <li class="nav-item">
-            <a class="nav-link text-blue fw-light" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-blue fw-light" aria-current="page" href="https://www.facebook.com/carlo.pagcaliwangan.104?mibextid=JRoKG">Facebook</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-blue fw-light" aria-current="page" href="#https://www.instagram.com/carlo_pmndzaa?igsh=MWdlNGxnZWJwYTM4bw==">Instagram</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-blue fw-light" aria-current="page" href="https://www.tiktok.com/@carlo_pmndzaa?_t=8pbN6Ziq8we&_r=1">Tiktok</a>
-    </ul>
 
-     <div class="link-container1"></div>
-        <a class="nav-link1 text-light fw-light pt-3 " href="https://eikenshop.com/pages/privacy-policy">Privacy Policy</a>
-        <a class="nav-link1 text-light fw-light pt-3" href="https://eikenshop.com/pages/general-terms-and-conditions-of-sale">Terms and Conditions</a>
-      </div>
+  <h2 class="display-6 fw-light mb-4 fw-bold">Visit Us</h2>
+<div class="d-flex justify-content-center mt-3">
+<a href="https://www.facebook.com/CASIOGSHOCK/" target="_blank" class="text-white me-3">
+<i class="fab fa-facebook fa-2x"></i>
+</a>
+<a href="https://www.youtube.com/user/CasioGshockOfficial" target="_blank" class="text-white me-3">
+<i class="fab fa-youtube fa-2x"></i> 
+</a>
+<a href="https://www.instagram.com/gshock_jp/" target="_blank" class="text-white">
+<i class="fab fa-instagram fa-2x"></i>
+</a>
+</div>
+<div class="link-container1"></div>
+<a class="nav-link1 text-light fw-light pt-3 " href="https://eikenshop.com/pages/privacy-policy">Privacy Policy</a>
+<a class="nav-link1 text-light fw-light pt-3" href="https://eikenshop.com/pages/general-terms-and-conditions-of-sale">Terms and Conditions</a>
+</div>
 
-    <hr>
-    <p>
-        <small class="text-secondary f2-light">Copyright © 2024 All Rights Reserved</small>
-    </p>
+</div>
+<hr>
+
+      <small class="text-secondary f2-light">Copyright  2024 All rights Reserved | Bag Packs</small>
+  </p>
+</footer>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
