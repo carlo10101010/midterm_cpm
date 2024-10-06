@@ -1,25 +1,33 @@
 .navbar {
-    position: fixed;
+   
     width: 100%;
     z-index: 1030;
+    color: aliceblue;
 }
 
-.nav-link:hover{
-    background-color: white;
+.navbar-dark .navbar-toggler {
+    border-color: transparent; /* Make the border transparent */
 }
 
-.div1{
-    background-color: gray;
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M3 7h24M3 15h24M3 23h24'/%3E%3C/svg%3E"); /* White lines */
 }
+
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 30 30'%3E%3Cpath stroke='none' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
 
 body{
     overflow-x: hidden;
+    background-color: rgb(34, 33, 33);
+   
 }
 
 
-.card{
-    width: 20rem;
-}
+
 
 .row{
     display: flex;
@@ -35,10 +43,6 @@ body{
 }
 
 
-.row{
-    background-color: gray;
-}
-
 
 .Featured{
     background-color: white;
@@ -48,7 +52,22 @@ body{
 #Reviews{
     text-align: center;
     width: 100%;
+    color: aliceblue;
+    
 }
+
+i{
+    color: aliceblue;
+}
+h5{
+    color: aliceblue;
+}
+
+.card-custom {
+    max-width: 500px; /* Adjust to your preference */
+    margin: auto; /* Center the cards */
+}
+
 
 
 .fs-5{
@@ -57,26 +76,7 @@ body{
 }
 
 
-.card-custom {
-    transition: transform 0.3s ease;
-    border: none;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.card-custom:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.card-img-top {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-    border-bottom: 2px solid #e0e0e0;
-}
-
-.hover-img:hover {
+.card:hover {
     transform: scale(1.1);
 }
 
